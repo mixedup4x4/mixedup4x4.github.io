@@ -1,0 +1,160 @@
+/* https://coolors.co/f15025-ffffff-e6e8e6-ced0ce-191919 */
+
+/* for width up to 320px*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+:root {
+    --red-orange: #F15025;
+    --white: #ffffff;
+    --platinum: #E6E8E6;
+    --light-grey: #CED0CE;
+    --eerie-black: #191919;
+}
+
+html {
+    background-color: var(--eerie-black);
+    color: var(--white);
+}
+
+body {
+    
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section {
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+    color: var(--white);
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+p {
+    font-size: 13px;
+}
+
+input, textarea {
+    font-family: 'Merriweather', serif;
+    color: var(--eerie-black);
+    font-size: 12px;
+    background-color: var(--platinum);
+    text-align: center;
+    
+}
+
+/* password and passphrase */
+
+#password,
+#passphrase {
+    width: 200px;
+}
+
+button {
+    color: var(--light-grey);
+    background-color: var(--red-orange);
+    padding: 10px;
+    transition: .5s
+}
+
+button img { 
+    max-width: 15px;
+}
+
+button:hover {
+    color: var(--eerie-black);
+    background-color: var(--light-grey);
+    transition: .5s
+}
+
+.refresh {
+    background: "url(images/refresh.svg)"
+}
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#main-grid section {
+    padding: 0;
+}
+
+a,
+a:visited {
+    color: var(--white);
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--red-orange);
+    transition: .5s;
+}
+
+/* options */
+
+#length,
+#phrase-length {
+    max-width: 50px;
+}
+
+#passphrase {
+    resize: none;
+    text-align: center;
+
+}
+
+/* wall of entropy */
+
+#wall {
+    display: block
+}
+
+#wall p {
+    font-size: 15px;
+    line-height: 10px;
+}
+
+#wall p span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* end wall of entropy */
+
+.instructions {
+    margin-top: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+/* counter */
+
+.grey {
+    color: #777;
+}
+
+#keystrokes {
+    font-size: large;
+    color: white;
+}
+
+/*
+@media only screen and (min-width: 420px) and (max-width: 599px) {
+
+    p {
+        font-size: 1.5em;
+    }
+}*/
